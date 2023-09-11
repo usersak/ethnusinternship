@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Global Styles */
+        body {
+            background-color: yellow;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: maroon;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        /* Content Styles */
+        .content {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Horizontal Line */
+        hr {
+            border: 1px solid maroon;
+            margin: 20px 0;
+        }
+
+        /* Footer Styles */
+        footer {
+            text-align: center;
+            background-color: maroon;
+            color: white;
+            padding: 10px 0;
+        }
+
+        /* Sidebar (Navbar) Styles */
+        .sidebar {
+            width: 200px;
+            background-color: white;
+            position: fixed;
+            height: 100%;
+            left: 0;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 20px;
+        }
+
+        .sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            color: maroon;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            background-color: maroon;
+            color: white;
+        }
+
+        /* Main Content Area */
+        .main-content {
+            margin-left: 220px; /* Adjust for the width of the sidebar */
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My First Styled Page</h1>
+    </header>
+
+    <div class="sidebar">
+        <a href="#">Home Page</a>
+        <a href="#">Musings</a>
+        <a href="#">My Town</a>
+        <a href="#">Links</a>
+    </div>
+
+    <div class="main-content">
+        <div class="content">
+            <p>Welcome to my styled page! It lacks images but at least it has style.</p>
+            <p>There should be more here, but I don't know what yet.</p>
+            <hr>
+            <p>Made by myself</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2023 My First Styled Page
+    </footer>
+</body>
+</html>

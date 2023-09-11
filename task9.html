@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Sidebar Styles */
+        .sidebar {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            left: -250px;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 20px;
+            color: white;
+            display: block;
+            transition: background-color 0.3s; /* Add a smooth transition for background color */
+        }
+
+        /* Button Colors */
+        .sidebar a.green {
+            background-color: green;
+        }
+
+        .sidebar a.blue {
+            background-color: blue;
+        }
+
+        .sidebar a.red {
+            background-color: red;
+        }
+
+        .sidebar a.black {
+            background-color: black;
+        }
+
+        /* Hover Effect */
+        .sidebar a:hover {
+            background-color: #444;
+        }
+
+        /* Sidebar Open Effect */
+        .sidebar.open {
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <a class="green" href="#">Green</a>
+        <a class="blue" href="#">Blue</a>
+        <a class="red" href="#">Red</a>
+        <a class="black" href="#">Black</a>
+    </div>
+
+    <button onclick="toggleSidebar()">Toggle Sidebar</button>
+
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.querySelector(".sidebar");
+            sidebar.classList.toggle("open");
+        }
+    </script>
+</body>
+</html>

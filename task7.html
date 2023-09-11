@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Vertical Navigation Bar (Blue background, Orange hover) */
+        .vertical-navbar {
+            width: 200px; /* Adjust the width as needed */
+            background-color: blue;
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .vertical-navbar li {
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .vertical-navbar li:hover {
+            background-color: orange;
+            cursor: pointer;
+        }
+
+        /* Horizontal Navigation Bar (Grey background, Dark Grey hover) */
+        .horizontal-navbar {
+            background-color: grey;
+            list-style-type: none;
+            padding: 0;
+            height: 40px; /* Adjust the height as needed */
+        }
+
+        .horizontal-navbar li {
+            display: inline;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+
+        .horizontal-navbar li:hover {
+            background-color: darkgrey;
+            cursor: pointer;
+        }
+
+        /* Specific styles for "Home" item in both navbars */
+        .vertical-navbar li:first-child {
+            background-color: orange;
+        }
+
+        .horizontal-navbar li:first-child {
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <!-- Vertical Navigation Bar -->
+    <ul class="vertical-navbar">
+        <li>Home</li>
+        <li>Java</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Bootstrap</li>
+    </ul>
+
+    <!-- Horizontal Navigation Bar -->
+    <ul class="horizontal-navbar">
+        <li>Home</li>
+        <li>Java</li>
+        <li>CSS</li>
+        <li>HTML</li>
+        <li>Bootstrap</li>
+    </ul>
+</body>
+</html>
